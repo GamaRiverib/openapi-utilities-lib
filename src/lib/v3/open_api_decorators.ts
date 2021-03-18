@@ -120,7 +120,7 @@ export function Description(description: string) {
   }
 }
 
-export function Enum(values: string[]) {
+export function Enum(values: any[]) {
   return (target: object, propertyName: string) => {
     const builder = getOpenApiSpecificationBuilder();
     const key = target.constructor.name;
