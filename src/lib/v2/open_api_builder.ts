@@ -121,7 +121,7 @@ export class OpenApiSpecificationBuilder {
             this.document.definitions = {};
         }
         if (!this.document.definitions[key]) {
-            this.document.definitions[key] = { type: "obejct" };
+            this.document.definitions[key] = { type: "object" };
         }
         const spec = this.document.definitions[key];
         if (!spec.properties) {
