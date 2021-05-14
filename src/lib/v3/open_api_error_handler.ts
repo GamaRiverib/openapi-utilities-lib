@@ -17,5 +17,6 @@ export function openApiErrorHandler(error: any, req: any, res: any, next: any): 
         res.status(error.status || 400).send({ error: new ApiValidationError("Request validation error", errors) });
         return;
     }
+    console.log("OAEH", { error });
     res.status(error.status || 500).send({ error: new UnhandleError() });
 }
