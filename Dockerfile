@@ -4,7 +4,7 @@ WORKDIR /usr/src/app/openapi-utilities-lib
 
 RUN npm i typescript -g
 
-COPY ./package.json ./
+COPY ./package*.json ./
 COPY ./tsconfig.json ./
 COPY ./src ./src
 
