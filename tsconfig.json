@@ -4,7 +4,8 @@
     "module": "commonjs",
     "outDir": "build",
     "declaration": true,
-    "experimentalDecorators": true
+    "experimentalDecorators": true,
+    "types": ["node"]
   },
   "include": [
     "src/**/*.ts"
