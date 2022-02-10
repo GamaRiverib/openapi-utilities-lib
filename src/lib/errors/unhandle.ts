@@ -45,4 +45,18 @@ export class UnhandleError extends BaseError {
   })
   message: string;
 
+  @Property2({
+    schema: {
+      type: "string"
+    },
+    required: true
+  })
+  @Property3({
+    schema: {
+      type: "string"
+    },
+    required: true
+  })
+  folio: string;
+
 }

@@ -1,7 +1,7 @@
 {
   "name": "@gamariverib/openapi-utilities-lib",
   "description": "Supporting class library for documenting APIs with the OpenAPI version 3 standard",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "main": "./build/index.js",
   "engines": {
     "node": ">=10.0.0",

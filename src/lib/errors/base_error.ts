@@ -7,7 +7,7 @@ export abstract class BaseError {
 
   public message: string = "";
   public code: string = "";
-  public id: string = "";
+  public folio: string = "";
 
   constructor(message: string, code: string) {
 
@@ -25,7 +25,7 @@ export abstract class BaseError {
 
     const folio: string = this.generateFolio(10);
 
-    Object.defineProperty(this, "id", {
+    Object.defineProperty(this, "folio", {
       configurable: false,
       get: () => { return folio; },
       set: undefined
