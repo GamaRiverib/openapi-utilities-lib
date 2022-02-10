@@ -209,6 +209,7 @@ export class OpenApiSpecificationBuilder {
         if (!this.document.components.securitySchemes) {
             this.document.components.securitySchemes = {};
         }
+        this.document.components.securitySchemes[key] = securityScheme;
         return this;
     }
 
